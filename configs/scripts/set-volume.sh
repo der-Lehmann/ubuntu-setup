@@ -22,7 +22,7 @@ fi
 pactl set-sink-volume @DEFAULT_SINK@ "${new_volume}%"
 
 # Notify the user with the new volume
-~/.scripts/notify-wrapper.sh -r 555 -t 1000 "Volume" "${new_volume}%" > /dev/null 2>&1
+notify-send -r 555 -t 1000 "Volume" "${new_volume}%" > /dev/null 2>&1
 
 # Optional: Refresh i3 status
 $refresh_i3status
