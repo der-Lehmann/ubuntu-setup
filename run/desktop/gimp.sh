@@ -1,0 +1,1 @@
+flatpak install -y https://flathub.org/repo/appstream/org.gimp.GIMP.flatpakref
