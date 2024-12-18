@@ -23,6 +23,7 @@ done
 
 source ./run/copy-files.sh
 source ./run/settings.sh
+source ./run/cleanup.sh
 
 chsh -s $(which zsh)
 
