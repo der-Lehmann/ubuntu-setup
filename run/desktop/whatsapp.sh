@@ -14,7 +14,7 @@ Exec=google-chrome --app="https://web.whatsapp.com" --name=WhatsApp --class=What
 Terminal=false
 Type=Application
 Icon=/home/$USER/.local/share/icons/whatsapp-icon.png
-Categories=GTK;
+Categories=Network;InstantMessaging;
 MimeType=text/html;text/xml;application/xhtml_xml;
 StartupNotify=true
 EOF
