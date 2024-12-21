@@ -1,1 +1,3 @@
-flatpak install -y flathub org.mozilla.Thunderbird
+echo "Thunderbird installieren"
+
+sudo snap install thunderbird
