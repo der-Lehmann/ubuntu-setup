@@ -1,7 +1,7 @@
 sudo apt update
 sudo apt upgrade -y
 
-sudo apt install -y build-essential curl wget software-properties-common
+sudo apt install -y build-essential curl wget software-properties-common libfuse2
 sudo apt install -y libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev
 sudo apt install -y libjpeg-dev libpng-dev libtiff-dev ffmpeg
 sudo apt install -y libqt5gui5 libqt5webkit5 libqt5widgets5 xdg-utils
