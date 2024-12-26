@@ -10,7 +10,8 @@ cat <<EOF >~/.local/share/applications/WhatsApp.desktop
 Version=1.0
 Name=WhatsApp
 Comment=WhatsApp Messenger
-Exec=google-chrome --app="https://web.whatsapp.com" --name=WhatsApp --class=Whatsapp
+# The profile-directory option may need to be changed. Look for the "Profile Path" entry on this page: brave://version
+Exec=brave-browser --profile-directory="Profile 1" --app="https://web.whatsapp.com" --name=WhatsApp --class=Whatsapp
 Terminal=false
 Type=Application
 Icon=/home/$USER/.local/share/icons/whatsapp-icon.png

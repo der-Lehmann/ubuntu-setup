@@ -10,7 +10,7 @@ cat <<EOF >~/.local/share/applications/Teams.desktop
 Version=1.0
 Name=Teams
 Comment=Microsoft Teams
-Exec=google-chrome --app="https://teams.microsoft.com" --name=Teams --class=Teams
+Exec=brave-browser --profile-directory="Profile 2" --app="https://teams.microsoft.com" --name=Teams --class=Teams
 Terminal=false
 Type=Application
 Icon=/home/$USER/.local/share/icons/teams-icon.png

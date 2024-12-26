@@ -10,7 +10,7 @@ cat <<EOF >~/.local/share/applications/Outlook.desktop
 Version=1.0
 Name=Outlook
 Comment=Microsoft Outlook
-Exec=google-chrome --app="https://outlook.office.com" --name=Outlook --class=Outlook
+Exec=brave-browser --profile-directory="Profile 2" --app="https://outlook.office.com" --name=Outlook --class=Outlook
 Terminal=false
 Type=Application
 Icon=/home/$USER/.local/share/icons/outlook-icon.png
