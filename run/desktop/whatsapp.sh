@@ -14,7 +14,7 @@ Comment=WhatsApp Messenger
 Exec=brave-browser --profile-directory="Profile 1" --app="https://web.whatsapp.com" --name=WhatsApp --class=Whatsapp
 Terminal=false
 Type=Application
-Icon=/home/$USER/.local/share/icons/whatsapp-icon.png
+Icon=~/.local/share/icons/whatsapp-icon.png
 Categories=Network;InstantMessaging;
 MimeType=text/html;text/xml;application/xhtml_xml;
 StartupNotify=true
