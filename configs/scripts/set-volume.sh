@@ -21,6 +21,9 @@ fi
 # Set the new volume using pactl
 pactl set-sink-volume @DEFAULT_SINK@ "${new_volume}%"
 
+# Unmute the default sink
+pactl set-sink-mute @DEFAULT_SINK@ 0
+
 # Notify the user with the new volume
 notify-send -r 555 -t 1000 "Volume" "${new_volume}%" > /dev/null 2>&1
 
