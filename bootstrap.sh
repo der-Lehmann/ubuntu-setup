@@ -5,10 +5,12 @@ failed_scripts=()
 
 run_script() {
     local script=$1
+    local original_dir=$(pwd)
     if ! source "$script"; then
         failed_scripts+=("$script")
         echo "❌ Error executing: $script" >&2
     fi
+    cd "$original_dir"
 }
 
 source ./run/required.sh
