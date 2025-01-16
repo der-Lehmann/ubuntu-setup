@@ -47,6 +47,9 @@ exec --no-startup-id redshift
 # Apply keyboard-mappings
 exec --no-startup-id /usr/local/bin/remap-keyboard.sh 1
 
+# Adjust display zoom
+exec --no-startup-id /usr/local/bin/scale-monitor.sh 1.25
+
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
 bindsym XF86AudioRaiseVolume exec --no-startup-id ~/.scripts/set-volume.sh increase > /dev/null 2>&1
