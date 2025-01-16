@@ -210,3 +210,9 @@ assign [instance="teams.microsoft.com"] 6
 assign [class="Whatsapp"] 6
 assign [class="Enpass"] 7
 assign [class="Blueman-manager"] 7
+
+exec --no-startup-id xsetroot -cursor_name left_ptr
+
+# Change the touchpad sensitivity. The id (10) needs to be adjusted depending on the device.
+# Use xinput list to identify the correct device id.
+exec --no-startup-id xinput set-prop 10 "libinput Accel Speed" 0.5
