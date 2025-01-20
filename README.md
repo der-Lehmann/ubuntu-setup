@@ -15,12 +15,9 @@ These things are listed below.
 #### Touchepad sensitivity
 In the `i3` config file the touchpad sensitivity is being adjusted with the following line:
 ```
-exec --no-startup-id xinput set-prop 10 "libinput Accel Speed" 0.5
+exec --no-startup-id xinput set-prop $(xinput list | grep "Touchpad" | awk '{print $6}' | cut -d'=' -f2) "libinput Accel Speed" 0.5
 ```
-The device id, 10 in this case, will most likely need to be changed.  
-Also the property `libinput Accel Speed` might need to be changed too.  
-
-In order to identify the touchpad device id, run the command `xinput list`.  
-After the id is known, the property responsible for the touchpad sensitivity needs to be identified. This can be done with the command `xinput list-props <id>`.  
+The device id of the touchpad is being set dynamically since it can vary between reboots.  
+The property `libinput Accel Speed` might need to be changed, depending on which property is responsible for the mouse sensitivity. To identify the property use the command `xinput list-props <id>`.  
 
 If the computer does not have a touchpad, the line can obviously be deleted.  

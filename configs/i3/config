@@ -207,6 +207,7 @@ assign [class="Chromium"] 1
 assign [class="Alacritty"] 2
 assign [class="Code"] 3
 assign [class="Cursor"] 3
+assign [class="Todoist"] 4
 assign [class="thunderbird-esr"] 6
 assign [instance="outlook.office.com"] 6
 assign [instance="teams.microsoft.com"] 6
@@ -216,6 +217,6 @@ assign [class="Blueman-manager"] 7
 
 exec --no-startup-id xsetroot -cursor_name left_ptr
 
-# Change the touchpad sensitivity. The id (10) needs to be adjusted depending on the device.
-# Use xinput list to identify the correct device id.
-exec --no-startup-id xinput set-prop 10 "libinput Accel Speed" 0.5
+# The following line changes the touchpad sensitivity. 
+# The id of the touchpad device can change after reboot, so it has to be identified dynamically. using xinput list.
+exec --no-startup-id xinput set-prop $(xinput list | grep "Touchpad" | awk '{print $6}' | cut -d'=' -f2) "libinput Accel Speed" 0.5
