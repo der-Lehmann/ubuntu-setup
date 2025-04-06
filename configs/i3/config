@@ -218,6 +218,10 @@ assign [class="Blueman-manager"] 9
 
 exec --no-startup-id xsetroot -cursor_name left_ptr
 
+for_window [window_role="popup"] floating enable, move position center
+for_window [class="dialog"] floating enable, move position center
+for_window [class="gnome-calculator"] floating enable, move position center
+
 # The following line changes the touchpad sensitivity. 
 # The id of the touchpad device can change after reboot, so it has to be identified dynamically. using xinput list.
 exec --no-startup-id xinput set-prop $(xinput list | grep "Touchpad" | awk '{print $6}' | cut -d'=' -f2) "libinput Accel Speed" 0.5
