@@ -104,7 +104,6 @@ export EDITOR='vim'
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias unlockKanzleiPC="ssh root@192.168.1.119 -p 2222"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
@@ -123,3 +122,6 @@ eval "$(pyenv init -)"
 
 # Syntax highlighting
 source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# PHP Composer path
+export PATH="$PATH:$HOME/.config/composer/vendor/bin"
