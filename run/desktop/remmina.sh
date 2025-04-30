@@ -1,0 +1,1 @@
+flatpak install --user -y flathub org.remmina.Remmina
